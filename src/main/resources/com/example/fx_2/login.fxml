@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx_2.HelloController">
    <cursor>
       <Cursor fx:constant="S_RESIZE" />
@@ -25,6 +24,9 @@
                </image>
             </ImageView>
          </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </AnchorPane>
    </left>
    <right>
@@ -47,14 +49,18 @@
                </font>
             </Label>
             <Button fx:id="loginButton" layoutX="27.0" layoutY="269.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: #E96151;" text="Login" />
-            <Button fx:id="cancelLoginButton" layoutX="27.0" layoutY="322.0" mnemonicParsing="false" onAction="#cancelLoginOnAction" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: #E96151;" text="Cancel" />
+            <Button fx:id="cancelLoginButton" layoutX="27.0" layoutY="315.0" mnemonicParsing="false" onAction="#cancelLoginOnAction" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: #E96151;" text="Cancel" />
             <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="14.0" layoutY="226.0" prefHeight="19.0" prefWidth="263.0" textFill="#ee2424">
                <font>
                   <Font size="13.0" />
                </font>
             </Label>
             <PasswordField fx:id="passwordBox" layoutX="95.0" layoutY="175.0" prefHeight="25.0" prefWidth="173.0" promptText="password" />
+            <Button fx:id="loginButton1" layoutX="27.0" layoutY="361.0" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="25.0" prefWidth="249.0" text="Register" />
          </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </AnchorPane>
    </right>
 </BorderPane>
